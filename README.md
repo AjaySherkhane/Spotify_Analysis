@@ -62,6 +62,13 @@ Nested subqueries, window functions, and CTEs<br />
 **Easy Level**<br />
 
 1.Retrieve the names of all tracks that have more than 1 billion streams.<br />
+
+'''sql
+SELECT
+	track
+FROM spotify
+WHERE stream > 1000000000
+'''
 2.List all albums along with their respective artists.<br />
 3.Get the total number of comments for tracks where licensed = TRUE.<br />
 4.Find all tracks that belong to the album type single.<br />
